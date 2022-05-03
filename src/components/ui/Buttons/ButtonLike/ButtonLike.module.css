@@ -1,0 +1,40 @@
+.button__like {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.like__down,
+.like__up {
+  width: 18px;
+  height: 18px;
+  padding: 10px;
+  margin-right: 0.5rem;
+  border: 0.5px solid rgba(255, 255, 255, 0);
+}
+
+.like__down:hover,
+.like__up:hover {
+  border: 0.5px solid white;
+}
+
+.button__like--disabled {
+  cursor: default;
+}
+
+.button__like--disabled:hover {
+  border: 0.5px solid rgba(255, 255, 255, 0);
+}
+
+.button__like--active {
+  border: 0.5px solid white;
+}
+
+.like__down {
+  background-color: rgba(var(--color-yellow-negative));
+}
+.like__up {
+  background-color: rgba(var(--color-green-positive));
+}

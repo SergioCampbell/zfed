@@ -1,0 +1,36 @@
+.menu {
+  width: 173px;
+  height: 36px;
+  z-index: 3;
+}
+
+.menu__header {
+  width: 100%;
+  position: relative;
+  border: 2px solid #333333;
+  display: flex;
+  height: 36px;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 0;
+  background-color: var(--color-white);
+  cursor: pointer;
+}
+
+.menu__option {
+  width: 100%;
+  border: 1px solid var(--color-darker-gray);
+  height: 36px;
+  background-color: var(--color-white);
+  cursor: pointer;
+}
+
+.menu__option--selected {
+  background-color: var(--color-light-gray);
+}
+
+.menu__option:hover {
+  background-color: var(--color-dark-gray);
+  color: var(--color-white);
+}
