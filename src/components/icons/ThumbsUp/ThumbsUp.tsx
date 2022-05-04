@@ -1,5 +1,5 @@
 import React from "react";
-import ThumbsUpIcon from "assets/thumbs-up.svg";
+import ThumbsUpIcon from "../../../assets/thumbs-up.svg";
 
 interface IThumbsUp {
   className?: string;

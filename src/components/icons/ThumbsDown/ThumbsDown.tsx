@@ -1,5 +1,5 @@
 import React from "react";
-import ThumbsDownIcon from "assets/thumbs-down.svg";
+import ThumbsDownIcon from "../../../assets/thumbs-down.svg";
 
 interface IThumbsDown {
   className?: string;

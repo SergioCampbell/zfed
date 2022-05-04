@@ -1,6 +1,6 @@
-import { IOptions } from "interfaces/interfaces";
+import { IOptions } from "../../../interfaces/interfaces";
 import React, { useState } from "react";
-import Triangle from "assets/img/triangle.png";
+import Triangle from "../../../assets/img/triangle.png";
 import style from "./Menu.module.css";
 interface IMenu {
   options: IOptions[];

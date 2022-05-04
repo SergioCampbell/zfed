@@ -1,6 +1,6 @@
-import { Card, List } from "components/ui";
-import Menu from "components/ui/Menu";
-import { optionsMenu } from "constants/constants";
+import { Card, List } from "../../../components/ui";
+import Menu from "../../../components/ui/Menu";
+import { optionsMenu } from "../../../constants/constants";
 import React, { useEffect, useState } from "react";
 import style from "./ContainerProfiles.module.css";
 
@@ -23,12 +23,12 @@ const ContainerProfiles = () => {
   };
 
   return (
-    <div className={style.container}>
+    <main className={style.container}>
       <div className={style.container__menu}>
         <Menu options={options} onSelect={changeView} />
         <p>Previous Rulings</p>
       </div>
-      <div className={style.container__profiles}>
+      <section className={style.container__profiles}>
         {card ? (
           <div className={style.container__grid}>
             <Card />
@@ -36,8 +36,8 @@ const ContainerProfiles = () => {
         ) : (
           <List />
         )}
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 

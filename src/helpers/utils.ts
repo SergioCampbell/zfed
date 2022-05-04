@@ -1,18 +1,18 @@
 // images png
-import KanyePicture from "assets/img/profile/kanye.png";
-import CristinaPicture from "assets/img/profile/cristina.png";
-import ElonPicture from "assets/img/profile/elon.png";
-import GretaPicture from "assets/img/profile/greta.png";
-import MalalaPicture from "assets/img/profile/malala.png";
-import MarkPicture from "assets/img/profile/mark.png";
+import KanyePicture from "../assets/img/profile/kanye.png";
+import CristinaPicture from "../assets/img/profile/cristina.png";
+import ElonPicture from "../assets/img/profile/elon.png";
+import GretaPicture from "../assets/img/profile/greta.png";
+import MalalaPicture from "../assets/img/profile/malala.png";
+import MarkPicture from "../assets/img/profile/mark.png";
 
 //images webp
-import KanyePictureWebP from "assets/img/profile/kanye.webp";
-import CristinaPictureWebP from "assets/img/profile/cristina.webp";
-import ElonPictureWebP from "assets/img/profile/elon.webp";
-import GretaPictureWebP from "assets/img/profile/greta.webp";
-import MalalaPictureWebP from "assets/img/profile/malala.webp";
-import MarkPictureWebP from "assets/img/profile/mark.webp";
+import KanyePictureWebP from "../assets/img/profile/kanye.webp";
+import CristinaPictureWebP from "../assets/img/profile/cristina.webp";
+import ElonPictureWebP from "../assets/img/profile/elon.webp";
+import GretaPictureWebP from "../assets/img/profile/greta.webp";
+import MalalaPictureWebP from "../assets/img/profile/malala.webp";
+import MarkPictureWebP from "../assets/img/profile/mark.webp";
 
 export const resolvePercent = (totalVotes: number, value: number) =>
   ((value / totalVotes) * 100).toFixed(1);

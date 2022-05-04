@@ -1,16 +1,16 @@
 import React, { useState } from "react";
-import ShowList from "components/hocs";
-import { DataPerson, IHoc } from "interfaces/interfaces";
+import ShowList from "../../../components/hocs";
+import { DataPerson, IHoc } from "../../../interfaces/interfaces";
 import style from "./List.module.css";
 import {
   resolvePercent,
   resolveProfilePicture,
   resolveProfilePictureWebp,
   timesAgo,
-} from "helpers/utils";
-import { Button, ButtonLike } from "..";
-import { ThumbsDown, ThumbsUp } from "components/icons";
-import { addVote, removeVote, valdiateVotes } from "helpers/votes";
+} from "../../../helpers/utils";
+import { Button, ButtonLike } from "../Buttons/index";
+import { ThumbsDown, ThumbsUp } from "../../../components/icons";
+import { addVote, removeVote, valdiateVotes } from "../../../helpers/votes";
 
 const List = ({ data = {} as DataPerson, updateByid }: IHoc) => {
   const [active, setActive] = useState<string | null>(null);

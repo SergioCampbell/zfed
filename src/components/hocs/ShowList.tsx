@@ -8,15 +8,15 @@ import {
   updateDoc,
   doc,
 } from "firebase/firestore";
-import { DataPerson, IHoc } from "interfaces/interfaces";
+import { DataPerson, IHoc } from "../../interfaces/interfaces";
 
-export function ShowList<T>(Component: ComponentType<IHoc>) {
+export default function ShowList<T>(Component: ComponentType<IHoc>) {
   return (hocProps: T) => {
     const [data, setData] = useState<DataPerson[]>([] as DataPerson[]);
 
     useEffect(() => {
       try {
-        const q = query(collection(getFirestore(), "dataProfiles"));
+        const q = query(collection(getFirestore(), "data"));
         const unsubscribe = onSnapshot(q, (querySnapshot) => {
           const result = querySnapshot.docs.map((doc) => {
             return {
@@ -30,14 +30,14 @@ export function ShowList<T>(Component: ComponentType<IHoc>) {
       } catch (error) {
         alert(error);
       }
-    }, []);
+    }, []);  
 
     const updateByid = async (id: string, vote: "positive" | "negative") => {
       const profileFound = data.find((option) => option.id === id);
       if (profileFound) {
         profileFound[vote] = profileFound[vote] + 1;
         profileFound.lastUpdated = new Date().toISOString();
-        const ref = doc(getFirestore(), "dataProfiles", id);
+        const ref = doc(getFirestore(), "data", id);
         await updateDoc(ref, profileFound as any);
       }
     };
@@ -56,5 +56,3 @@ export function ShowList<T>(Component: ComponentType<IHoc>) {
     );
   };
 }
-
-export default ShowList;

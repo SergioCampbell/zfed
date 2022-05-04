@@ -1,4 +1,4 @@
-import { ThumbsDown, ThumbsUp } from "components/icons";
+import { ThumbsDown, ThumbsUp } from "../../../../components/icons";
 import React, { MouseEventHandler } from "react";
 import style from "./ButtonLike.module.css";
 

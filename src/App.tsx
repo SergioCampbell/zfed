@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { ContainerProfiles } from "components/layout";
+import { ContainerProfiles } from "./components/layout";
 
 function App() {
   return (

@@ -1,4 +1,4 @@
-import { keyStorage } from "constants/constants";
+import { keyStorage } from "../constants/constants";
 
 export const initStorage = () =>
   !getVotes() && localStorage.setItem(keyStorage, "");
