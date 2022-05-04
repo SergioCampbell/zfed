@@ -1,4 +1,4 @@
-# ZEMOGIAN UI-TEST Sergio Campbell Dev
+# ZEMOGIAN UI-TEST
 
 ## Resume
 
