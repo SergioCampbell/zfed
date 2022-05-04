@@ -6,9 +6,7 @@ Our client's app Rule of Thumb™️ tracks the sentiment of their users on tren
 
 ## Tools
 
-- React
-  - Hooks
-  - Hoc
+- React ``Hooks`` and ``Hoc``
 - Module css
 - Local Storage
 - Seo
