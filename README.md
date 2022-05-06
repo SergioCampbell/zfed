@@ -19,15 +19,21 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the local server\
+The app run in the local server:
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
+Builds the app for production to the `build` folder.
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 ## Live Demo
 
 You can see the live demo here >> https://zfed2022.web.app/
+
+### Notes
+
+In the source code if you want to implemente or copy this, you need to import your own private and public key, asigned to you by [Firebase](https://firebase.google.com/?hl=es)
+
+#
